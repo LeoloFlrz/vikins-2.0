@@ -1,12 +1,17 @@
 package org.example.war;
 
+import java.util.List;
+
 public class War {
 
-    String vikingArmy[];
-    String saxonArmy[];
+    List vikingArmy[];
+    List saxonArmy[];
 
-    public War(String[] vikingArmy, String[] saxonArmy) {
-        this.vikingArmy = vikingArmy;
-        this.saxonArmy = saxonArmy;
+    public War() {
+
+    }
+
+    public List[] getVikingArmy() {
+        return vikingArmy;
     }
 }
