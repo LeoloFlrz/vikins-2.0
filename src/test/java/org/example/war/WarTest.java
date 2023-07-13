@@ -1,7 +1,6 @@
 package org.example.war;
 
 import org.example.saxon.Saxon;
-import org.example.viking.Viking;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
