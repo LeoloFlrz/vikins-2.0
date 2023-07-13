@@ -31,4 +31,8 @@ public class Vikings extends Soldier {
             return this.msg = this.name + " has received "+ this.strength + " points of damage";
         }
     }
+
+    public String battleCry() {
+        return "Odin Owns You All!";
+    }
 }

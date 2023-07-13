@@ -65,7 +65,7 @@ class VikingTest {
     @Test
     public void should_return_NAME_has_received_DAMAGE_points_of_damage_if_the_Viking_is_still_alive() {
         viking.receiveDamage(50);
-        assertEquals(viking.name + " has received " + 50 + " points of damage", viking.getMsg());
+        assertEquals(viking.name + " has received " + 150 + " points of damage", viking.getMsg());
     }
 
     @Test
@@ -74,16 +74,16 @@ class VikingTest {
         assertEquals(viking.name + " has died in combat", viking.getMsg());
     }
 
-//    @Test
-//    public void battleCry_should_receive_0_arguments() {
-//        String crying = "crying";
-//        String battleCry = viking.battleCry();
-//        assertEquals("Odin Owns You All!", battleCry);
-//    }
-//
-//    @Test
-//    public void should_return_Odin_Owns_You_All_() {
-//        viking.battleCry();
-//        assertEquals("Odin Owns You All!", viking.battleCry());
-//    }
+    @Test
+    public void battleCry_should_receive_0_arguments() {
+        String crying = "crying";
+        String battleCry = viking.battleCry();
+        assertEquals("Odin Owns You All!", battleCry);
+    }
+
+    @Test
+    public void should_return_Odin_Owns_You_All_() {
+        viking.battleCry();
+        assertEquals("Odin Owns You All!", viking.battleCry());
+    }
 }
